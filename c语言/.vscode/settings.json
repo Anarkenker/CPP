@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "stdio.h": "c",
+        "exception": "c",
+        "new": "c",
+        "typeinfo": "c",
+        "cstdlib": "c",
+        "cmath": "c",
+        "*.tcc": "c",
+        "utility": "c",
+        "random": "c",
+        "stdlib.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}
