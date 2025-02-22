@@ -14,14 +14,13 @@ int main(){
             if(i & (1 << j)){
                 ans[cnt++] = j;    
             }
-        }    
+        }
         if(cnt == r){
             for(int j = r - 1; j >= 0; j--){
                 cout << setw(3) << n - ans[j];
             }
             cout << endl;
         }
-        
     }
     return 0;
 }
