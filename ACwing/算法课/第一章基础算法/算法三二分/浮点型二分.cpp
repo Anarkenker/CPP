@@ -11,6 +11,6 @@ int main(){
         if(mid * mid >= x) r = mid;
         else l = mid;
     }
-    cout << l;
+    cout << l;      
     return 0;
 }

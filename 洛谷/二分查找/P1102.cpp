@@ -3,14 +3,17 @@
 #include<vector>
 #include<cstdlib>
 #include<algorithm>
+#include<map>
 #define int long long
 using namespace std;
+map<int ,int> m;
 int a[200002];
 signed main(){
     int n, c, ans = 0;
     cin >> n >> c;
     for(int i = 0; i < n; i++){
         scanf("%lld", &a[i]);
+        m[a[i]]++;
     }
     sort(a, a + n);
     for(int i = 0; i < n; i++){
@@ -21,9 +24,8 @@ signed main(){
             if(a[mid] >= x) r = mid;
             else l = mid + 1;
         }
-        while(a[l] == x){
-            ans++;
-            l++;
+        if(a[l] == x){
+            ans += m[a[l]];
         }
     }
     cout << ans;
