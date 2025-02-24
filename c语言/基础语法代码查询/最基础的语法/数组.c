@@ -1,9 +1,10 @@
 #include<stdio.h>
+#include<math.h>
 int isPrime(int x,int knownprimes[],int numberofKnownprimes);
 int main(void)
 {
     
-
+    int number;
     int prime[100]={2};
 
     int count=1;

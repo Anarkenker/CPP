@@ -6,7 +6,7 @@ int main()
     int t=0;
     do
     {
-        int d=x%10;
+        int d = x%10;
         t =t*10+d;
         x/=10;
     } while (x>0);
@@ -23,6 +23,5 @@ int main()
         x/=10;
     }while(x>0);
     printf("\n");
-return 0;
-    
+    return 0;   
 }
