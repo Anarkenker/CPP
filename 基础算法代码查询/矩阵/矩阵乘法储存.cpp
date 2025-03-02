@@ -15,7 +15,4 @@ void mul(vector<vector<long long>>& A, vector<vector<long long>>& B, vector<vect
     }
     result = temp;
 }
-int main()
-{
-    
-}
+//这个时间复杂度是O(n^3);
