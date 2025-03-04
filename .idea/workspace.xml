@@ -4,11 +4,290 @@
     <option name="/Default/RiderDebugger/RiderRestoreDecompile/RestoreDecompileSetting/@EntryValue" value="false" type="bool" />
     <option name="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue" value="true" type="bool" />
     <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
-    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexRemoved" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e82a5d37-5867-48fb-8ede-51b65e5c0ee1" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/洛谷/二分查找/P1182.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/洛谷/二分查找/P1182.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/c++.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/c++.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/数据结构/数据结构1.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/数据结构/数据结构2.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷/洛谷其他题目/P1020.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/洛谷/洛谷其他题目/P1020.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-1模拟与高精度/P1009.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-1模拟与高精度/P1042.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-1模拟与高精度/P1045(高精快速幂）.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-1模拟与高精度/P1065.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-1模拟与高精度/P1067.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-1模拟与高精度/P1098 .cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-1模拟与高精度/P1249(贪心）.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-1模拟与高精度/P1303.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-1模拟与高精度/P1328.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-1模拟与高精度/P1518 .cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-1模拟与高精度/P1563.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-1模拟与高精度/P1591.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-1模拟与高精度/P1601 A+B Problem（高精）.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-1模拟与高精度/P1786.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-1模拟与高精度/P2670 .cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-1模拟与高精度/P4924.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-1模拟与高精度/output/P1045(高精快速幂）.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-1模拟与高精度/output/P1045.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-1模拟与高精度/output/P1065.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-1模拟与高精度/output/P1067.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-1模拟与高精度/output/P1098 .exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-1模拟与高精度/output/P1249(贪心）.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-1模拟与高精度/output/P1303.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-1模拟与高精度/output/P1328.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-1模拟与高精度/output/P1518 .exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-1模拟与高精度/output/P1563.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-1模拟与高精度/output/P1591.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-1模拟与高精度/output/P4924.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-2排序/P1012.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-2排序/P1059(STL版）.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-2排序/P1059.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-2排序/P1068.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-2排序/P1093.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-2排序/P1104.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-2排序/P1116.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-2排序/P1152 .cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-2排序/P1177.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-2排序/P1271.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-2排序/P1781.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-2排序/P1923.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-2排序/P2676.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-2排序/P5143.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-2排序/output/P1012.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-2排序/output/P1059.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-2排序/output/P1068.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-2排序/output/P1093.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-2排序/output/P1104.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-2排序/output/P1116.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-2排序/output/P1152 .exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-2排序/output/P1177.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-2排序/output/P1271.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-2排序/output/P1781.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-2排序/output/P1786.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-2排序/output/P1923.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-2排序/output/P2676.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-2排序/output/P5143.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-3暴力枚举/P1036.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-3暴力枚举/P1088 .cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-3暴力枚举/P1149.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-3暴力枚举/P1157.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-3暴力枚举/P1618.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-3暴力枚举/P1706.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-3暴力枚举/P2036(dfs再看看）.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-3暴力枚举/P2089(dfs).cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-3暴力枚举/P2089.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-3暴力枚举/P2241.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-3暴力枚举/P2392.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-3暴力枚举/P3392 .cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-3暴力枚举/P3654.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-3暴力枚举/P3799.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-3暴力枚举/output/P1036.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-3暴力枚举/output/P1088 .exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-3暴力枚举/output/P1149.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-3暴力枚举/output/P1157.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-3暴力枚举/output/P1618.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-3暴力枚举/output/P1706.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-3暴力枚举/output/P2036.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-3暴力枚举/output/P2089(dfs).exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-3暴力枚举/output/P2089.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-3暴力枚举/output/P2241.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-3暴力枚举/output/P2392.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-3暴力枚举/output/P3392 .exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-3暴力枚举/output/P3654.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-3暴力枚举/output/P3799 .exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/1-3暴力枚举/output/P3799.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/二分查找/P1024.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/二分查找/P1102.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/二分查找/P1163.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/二分查找/P1182.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/二分查找/P1678 .cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/二分查找/P1824.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/二分查找/P1873.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/二分查找/P2249.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/二分查找/P2440.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/二分查找/P2678.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/二分查找/P3743.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/二分查找/P3853 .cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/二分查找/output/P1024.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/二分查找/output/P1102.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/二分查找/output/P1163.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/二分查找/output/P1182.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/二分查找/output/P1678 .exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/二分查找/output/P1824.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/二分查找/output/P1873.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/二分查找/output/P2249.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/二分查找/output/P2440.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/二分查找/output/P2678.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/二分查找/output/P3743.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/二分查找/output/P3853 .exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/B2029.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/B2093.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P1035.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P1046 .c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P1055.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P1075.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P1085.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P1089.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P1125.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P1161.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P1200.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P1205.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P1217.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P1304 .cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P1307.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P1308字符串经典例题.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P1319.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P1320.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P1321.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P1420.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P1421.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P1422.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P1423 .cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P1424 .c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P1427.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P1428.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P1553.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P1554.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P1597.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P1598.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P1603(贪心）.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P1614(sort函数的应用）.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P1720(feb数列关于递归超时的优化).cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P1765.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P1789(补）.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P1888.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P1909.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P1914.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P1957.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P1980 .c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P2141.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P2415.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P2550.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P2615.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P2911.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P3741.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P3954.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P4414冒泡排序.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P4956.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P5461.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P5704.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P5710 .c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P5711.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P5712.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P5713.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P5714星号控制宽度进行格式化输出.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P5715排序.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P5716.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P5717.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P5718.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P5719.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P5720.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P5721.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P5724.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P5725.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P5726.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P5727.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P5728.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P5729.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P5730 .cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P5731.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P5732.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P5733.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P5734string库实践.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P5735.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P5738.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P5739.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P5740.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P5741.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P5742.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P5743.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/P5744.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/B2093.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P1009.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P1035.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P1042.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P1046 .exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P1055.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P1075.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P1089.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P1125.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P1161.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P1200.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P1205.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P1217.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P1304 .exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P1307.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P1308.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P1319.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P1320.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P1321.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P1420.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P1423 .exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P1427.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P1428.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P1553.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P1554.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P1597.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P1598.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P1603(贪心）.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P1603.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P1614.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P1720.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P1765.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P1789(补）.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P1914.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P1957.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P1980 .exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P2141.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P2415.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P2550.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P2615.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P2670 .exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P2911.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P3741.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P4956.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P5461.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P5718.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P5719.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P5720.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P5721.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P5724.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P5725.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P5726.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P5727.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P5728.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P5729.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P5730 .exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P5731.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P5732.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P5733.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P5734.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P5735.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P5738.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P5739.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P5740.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P5741.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P5742.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P5743.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/P5744.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/p5015.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/p5709.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/p5736.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/p5737.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/output/洛谷开局第一敲.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/p1425.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/p2433.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/p5015.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/p5705.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/p5706.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/p5707.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/p5708.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/p5709.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/p5736.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/p5737.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷刷完的题单/入门语法题/洛谷开局第一敲.c" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,40 +300,48 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Anarkenker"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Anarkenker&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Anarkenker/c--.git",
-    "accountId": "1976623f-c249-4abc-8305-e322b1daa814"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Anarkenker/c--.git&quot;,
+    &quot;accountId&quot;: &quot;1976623f-c249-4abc-8305-e322b1daa814&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2tkF3zNw8ew8Dl7xXaNWFd1WEpB" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.RadMigrateCodeStyle": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/qq327/Desktop/c++",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/qq327/Desktop/fswworkspace&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration name="g++" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" singleton="false" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
@@ -64,6 +351,8 @@
       <option name="presentableId" value="Default" />
       <updated>1740887972037</updated>
       <workItem from="1740887974061" duration="137000" />
+      <workItem from="1741091644107" duration="15000" />
+      <workItem from="1741097389105" duration="218000" />
     </task>
     <servers />
   </component>
