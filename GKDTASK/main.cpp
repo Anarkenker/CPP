@@ -8,27 +8,31 @@
 #include <chrono>
 using namespace std;
 
-
 class TaskSchedule{
 private:
     int out;
     array<int, 10000> a;
-    mutex Tock;
-    thread Thread1;
+    thread Thread1, Thread2;
 public:
-    TaskSchedule(){
-        thread1 = thread([this])(0){
-            while(true){
-                if(out != 0){
-                    cout << "Output: " << out << endl;
-                    out = 0;
+    void Monitor(){
+        while(true){
+            mutex lock;
+            lock.lock();
+            if(out != 0){
+                for(int i = 0; i < 10000; i++){
+                    a[i] = out;
                 }
+                out = 0;
             }
+            lock.unlock();
+            this_thread::sleep_for(chrono::milliseconds(1));
         }
+    }
+    TaskSchedule(){
+        Thread1 = thread(&TaskSchedule::Monitor);
     }
     void addTask(int key, int kind){
         mutex lock;
-
     }
     void PopBack(){
 
@@ -53,11 +57,26 @@ public:
 
 class Task1 : public Task{
 public:
+    void Run() override{
+        while(true){
+            if(*p1 != 0){
+                *p2 = *p1 + 1;
+                *p1 = 0;
+            }
+            this_thread::sleep_for(chrono::milliseconds(1));
+        }
+    }
+    
+    void CallBack(int Message) override{
+        *p1 = Message;
+        *p2 = *p1 + 1;
+    }
     void Calculate(function<void(int)>& CallBack, int Message) override{
-        if(p1)
+        *p2 = *p1 + 1;
+        CallBack(*p2);
     }
 };
-i
+
 class Task2 : public Task{
 public: 
     void Calculate(function<void(int)>& CallBack ,int Message) override{

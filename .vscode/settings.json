@@ -90,7 +90,11 @@
     "format": "cpp",
     "span": "cpp",
     "stop_token": "cpp",
-    "variant": "cpp"
+    "variant": "cpp",
+    "numbers": "cpp",
+    "print": "cpp",
+    "semaphore": "cpp",
+    "text_encoding": "cpp"
   },
   "C_Cpp.errorSquiggles": "enabled",
   "C_Cpp_Runner.msvcBatchPath": "",
