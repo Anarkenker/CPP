@@ -1,243 +1,244 @@
 #include <iostream>
-#include <vector>
+#include <functional>
 #include <thread>
 #include <mutex>
-#include <condition_variable>
-#include <queue>
+#include <atomic>
+#include <vector>
 #include <chrono>
+#include <memory>
 
-// 前置声明
-class Task;
+// 任务基类
+class Task {
+public:
+    Task(int key, std::shared_ptr<int> p1, std::shared_ptr<int> p2) : key_(key), p1_(p1), p2_(p2), running_(false) {}
+    virtual ~Task() {
+        running_ = false;
+        if (thread_.joinable()) {
+            thread_.join();
+        }
+    }
+
+    // 纯虚函数：运行任务
+    virtual void run() = 0;
+
+    // 纯虚函数：停止任务
+    virtual void stop() = 0;
+
+    // 纯虚函数：回调函数
+    virtual void callback(int msg) = 0;
+
+    // 获取任务标识符
+    int getKey() const { return key_; }
+
+    // 获取 p1
+    std::shared_ptr<int> getP1() const { return p1_; }
+
+protected:
+    int key_;         // 任务标识符
+    std::shared_ptr<int> p1_;         // 监视的变量
+    std::shared_ptr<int> p2_;         // 操作的变量
+    std::atomic<bool> running_; // 任务是否正在运行
+    std::thread thread_; // 任务线程
+};
+
+// Task1
+class Task1 : public Task {
+public:
+    Task1(int key, std::shared_ptr<int> p1, std::shared_ptr<int> p2) : Task(key, p1, p2) {}
+
+    void run() override {
+        running_ = true;
+        thread_ = std::thread([this]() {
+            while (running_) {
+                if (*p1_ != 0) {
+                    *p2_ = *p1_ + 1;
+                    std::cout << "write Task1-" << key_ << ": " << *p2_ << std::endl;
+                    *p1_ = 0;
+                }
+                std::this_thread::sleep_for(std::chrono::milliseconds(1));
+            }
+        });
+    }
+
+    void stop() override {
+        running_ = false;
+        if (thread_.joinable()) {
+            thread_.join();
+        }
+    }
+
+    void callback(int msg) override {
+        *p1_ = msg;
+    }
+};
+
+// Task2
+class Task2 : public Task {
+public:
+    Task2(int key, std::shared_ptr<int> p1, std::shared_ptr<int> p2) : Task(key, p1, p2), k_(1) {}
+
+    void run() override {
+        running_ = true;
+        thread_ = std::thread([this]() {
+            while (running_) {
+                if (*p1_ != 0) {
+                    *p2_ = *p1_ * k_;
+                    std::cout << "write Task2-" << key_ << ": " << *p2_ << std::endl;
+                    *p1_ = 0;
+                }
+                std::this_thread::sleep_for(std::chrono::milliseconds(1));
+            }
+        });
+    }
+
+    void stop() override {
+        running_ = false;
+        if (thread_.joinable()) {
+            thread_.join();
+        }
+    }
+
+    void callback(int msg) override {
+        k_ = msg;
+        *p1_ = 1;
+    }
+
+private:
+    int k_; // 比例系数
+};
+
+// Task3
+class Task3 : public Task {
+public:
+    Task3(int key, std::shared_ptr<int> p1, std::shared_ptr<int> p2) : Task(key, p1, p2) {}
+
+    void run() override {
+        running_ = true;
+        thread_ = std::thread([this]() {
+            while (running_) {
+                if (*p1_ != 0) {
+                    int t = *p1_;
+                    *p1_ = 0;
+                    *p2_ = t;
+                    std::cout << "write Task3-" << key_ << ": " << *p2_ << std::endl;
+                    std::this_thread::sleep_for(std::chrono::milliseconds(1));
+                    *p2_ = t + 1;
+                    std::cout << "write Task3-" << key_ << ": " << *p2_ << std::endl;
+                }
+                std::this_thread::sleep_for(std::chrono::milliseconds(1));
+            }
+        });
+    }
+
+    void stop() override {
+        running_ = false;
+        if (thread_.joinable()) {
+            thread_.join();
+        }
+    }
+
+    void callback(int msg) override {
+        *p1_ = msg;
+    }
+};
 
 // 任务管理类
 class TaskManager {
-private:
-    int out;
-    std::vector<int> a;
-    std::vector<Task*> tasks;
-    std::mutex mtx;
-    std::condition_variable cv;
-    bool stopFlag = false;
-
-    // 线程 1：监视 out 变量
-    void monitorOut() {
-        while (!stopFlag) {
-            std::unique_lock<std::mutex> lock(mtx);
-            cv.wait(lock, [this] { return out != 0 || stopFlag; });
-            if (stopFlag) break;
-            std::cout << "out: " << out << std::endl;
-            out = 0;
-        }
-    }
-
-    // 线程 2：处理控制信号
-    void handleInput() {
-        std::string command;
-        while (std::cin >> command) {
-            if (command == "add") {
-                int key, kind;
-                std::cin >> key >> kind;
-                addTask(key, kind);
-            } else if (command == "pop") {
-                popTask();
-            } else if (command == "callback") {
-                int key, msg;
-                std::cin >> key >> msg;
-                triggerCallback(key, msg);
-            }
-        }
-        {
-            std::lock_guard<std::mutex> lock(mtx);
-            stopFlag = true;
-        }
-        cv.notify_all();
-    }
-
 public:
-    TaskManager() : out(0) {
-        std::thread t1(&TaskManager::monitorOut, this);
-        std::thread t2(&TaskManager::handleInput, this);
-        t1.detach();
-        t2.detach();
+    TaskManager() : out_(std::make_shared<int>(0)) {
+        // 启动线程1：监视 out_
+        thread1_ = std::thread([this]() {
+            while (true) {
+                std::lock_guard<std::mutex> lock(mutex_);
+                if (*out_ != 0) {
+                    std::cout << "Output: " << *out_ << std::endl;
+                    *out_ = 0;
+                }
+            }
+        });
+
+        // 启动线程2：接收输入
+        thread2_ = std::thread([this]() {
+            std::string command;
+            while (std::cin >> command) {
+                if (command == "add") {
+                    int key, kind;
+                    std::cin >> key >> kind;
+                    addTask(key, kind);
+                } else if (command == "pop") {
+                    popTask();
+                } else if (command == "callback") {
+                    int key, msg;
+                    std::cin >> key >> msg;
+                    callbackTask(key, msg);
+                }
+            }
+        });
     }
 
     ~TaskManager() {
-        for (auto task : tasks) {
-            delete task;
+        if (thread1_.joinable()) thread1_.join();
+        if (thread2_.joinable()) thread2_.join();
+        for (auto& task : tasks_) {
+            task->stop(); // 确保任务停止
         }
     }
 
-    // 添加任务
-    void addTask(int key, int kind);
+    void addTask(int key, int kind) {
+        std::lock_guard<std::mutex> lock(mutex_);
+        auto p1 = std::make_shared<int>(0);
+        std::shared_ptr<int> p2;
 
-    // 删除任务
+        if (tasks_.empty()) {
+            p2 = out_;
+        } else {
+            auto& lastTask = tasks_.back();
+            p2 = lastTask->getP1();
+        }
+
+        std::unique_ptr<Task> task;
+
+        switch (kind) {
+            case 1: task = std::make_unique<Task1>(key, p1, p2); break;
+            case 2: task = std::make_unique<Task2>(key, p1, p2); break;
+            case 3: task = std::make_unique<Task3>(key, p1, p2); break;
+            default: 
+                std::cerr << "Invalid task kind!" << std::endl; 
+                return;
+        }
+
+        tasks_.push_back(std::move(task));
+        tasks_.back()->run();
+    }
+
     void popTask() {
-        std::lock_guard<std::mutex> lock(mtx);
-        if (!tasks.empty()) {
-            tasks.back()->stop();
-            delete tasks.back();
-            tasks.pop_back();
-            a.pop_back();
+        std::lock_guard<std::mutex> lock(mutex_);
+        if (!tasks_.empty()) {
+            tasks_.back()->stop(); // 确保任务停止
+            tasks_.pop_back();
         }
     }
 
-    // 触发回调
-    void triggerCallback(int key, int msg) {
-        std::lock_guard<std::mutex> lock(mtx);
-        for (auto task : tasks) {
+    void callbackTask(int key, int msg) {
+        std::lock_guard<std::mutex> lock(mutex_);
+        for (auto& task : tasks_) {
             if (task->getKey() == key) {
                 task->callback(msg);
                 break;
             }
         }
     }
-};
 
-// 任务基类
-class Task {
-protected:
-    int key;
-    int* p1;
-    int* p2;
-    std::string kind;
-    std::thread taskThread;
-    bool running = false;
-
-    virtual void doOperation() = 0;
-
-    void runTask() {
-        while (running) {
-            if (*p1 != 0) {
-                doOperation();
-            }
-            std::this_thread::sleep_for(std::chrono::milliseconds(10));
-        }
-    }
-
-public:
-    Task(int k, int* pp1, int* pp2, const std::string& kd) : key(k), p1(pp1), p2(pp2), kind(kd) {
-        running = true;
-        taskThread = std::thread(&Task::runTask, this);
-    }
-
-    virtual ~Task() {
-        stop();
-        if (taskThread.joinable()) {
-            taskThread.join();
-        }
-    }
-
-    int getKey() const {
-        return key;
-    }
-
-    virtual void callback(int msg) = 0;
-
-    void run() {
-        running = true;
-        if (!taskThread.joinable()) {
-            taskThread = std::thread(&Task::runTask, this);
-        }
-    }
-
-    void stop() {
-        running = false;
-    }
-};
-
-// Task1 类
-class Task1 : public Task {
-protected:
-    void doOperation() override {
-        int val = (*p1) + 1;
-        *p2 = val;
-        *p1 = 0;
-        std::cout << "write " << kind << "-" << key << ": " << val << std::endl;
-    }
-
-public:
-    Task1(int k, int* pp1, int* pp2) : Task(k, pp1, pp2, "Task1") {}
-
-    void callback(int msg) override {
-        *p1 = msg;
-    }
-};
-
-// Task2 类
-class Task2 : public Task {
 private:
-    int k;
-
-protected:
-    void doOperation() override {
-        int val = (*p1) * k;
-        *p2 = val;
-        *p1 = 0;
-        std::cout << "write " << kind << "-" << key << ": " << val << std::endl;
-    }
-
-public:
-    Task2(int k, int* pp1, int* pp2) : Task(k, pp1, pp2, "Task2"), k(1) {}
-
-    void callback(int msg) override {
-        k = msg;
-        *p1 = 1;
-    }
+    std::vector<std::unique_ptr<Task>> tasks_; // 任务列表
+    std::shared_ptr<int> out_;     // 输出变量
+    std::thread thread1_;      // 线程1：监视 out_
+    std::thread thread2_;      // 线程2：接收输入
+    std::mutex mutex_;         // 互斥锁
 };
 
-// Task3 类
-class Task3 : public Task {
-protected:
-    void doOperation() override {
-        int t = *p1;
-        *p1 = 0;
-        *p2 = t;
-        std::cout << "write " << kind << "-" << key << ": " << t << std::endl;
-        std::this_thread::sleep_for(std::chrono::milliseconds(1));
-        *p2 = t + 1;
-        std::cout << "write " << kind << "-" << key << ": " << t + 1 << std::endl;
-    }
-
-public:
-    Task3(int k, int* pp1, int* pp2) : Task(k, pp1, pp2, "Task3") {}
-
-    void callback(int msg) override {
-        *p1 = msg;
-    }
-};
-
-// 任务管理类添加任务的实现
-void TaskManager::addTask(int key, int kind) {
-    std::lock_guard<std::mutex> lock(mtx);
-    a.push_back(0);
-    int* p1 = &a.back();
-    int* p2;
-    if (tasks.empty()) {
-        p2 = &out;
-    } else {
-        p2 = &a[a.size() - 2];
-    }
-    Task* task;
-    switch (kind) {
-        case 1:
-            task = new Task1(key, p1, p2);
-            break;
-        case 2:
-            task = new Task2(key, p1, p2);
-            break;
-        case 3:
-            task = new Task3(key, p1, p2);
-            break;
-        default:
-            return;
-    }
-    tasks.push_back(task);
-}
-
+// 主函数
 int main() {
     TaskManager manager;
-    while (true) {
-        std::this_thread::sleep_for(std::chrono::seconds(1));
-    }
     return 0;
 }
