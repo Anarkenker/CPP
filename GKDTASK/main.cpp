@@ -3,13 +3,12 @@
 #include<thread>
 #include<mutex>
 #include<vector>
-#include<mutex>
 #include<functional>
 #include<cstdio>
 #include<chrono>
 #include<list>
 #include<atomic>
-
+#include<memory>
 using namespace std;
 mutex lock1, lock2;
 
@@ -154,13 +153,6 @@ public:
     }
 
     void CallBack(int key, int message){
-        // for(auto it = a.begin(); it != a.end(); it++){
-        //     if(*it == key){
-        //         ()
-        //         break;
-        //     }
-        // }
-
         for(auto task:tasks){
             if(task->GetKey() == key){
                 task->CallBack(message);
@@ -212,6 +204,5 @@ public:
 int main(){
     TaskSchedule taskSchedule;
     taskSchedule.Run();
-
     return 0;
 }
