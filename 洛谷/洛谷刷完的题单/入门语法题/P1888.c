@@ -5,10 +5,6 @@ int main()
 {
     int a,b,c=0;
     scanf("%d %d %d",&a,&b,&c);
-    
-
-
-   
     if (a > b) 
     {
         int temp = a;

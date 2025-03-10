@@ -18,13 +18,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e82a5d37-5867-48fb-8ede-51b65e5c0ee1" name="更改" comment="add">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/launch.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ACwing/算法课/第三章基础算法/位运算/源码反码补码.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ACwing/算法课/第三章基础算法/位运算/源码反码补码.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/洛谷/洛谷其他题目/P4305.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/洛谷/洛谷其他题目/P4305.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/洛谷/贪心/P1842.cpp" beforeDir="false" />
+    <list default="true" id="e82a5d37-5867-48fb-8ede-51b65e5c0ee1" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/test.exe" beforeDir="false" afterPath="$PROJECT_DIR$/test.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/洛谷/贪心/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/洛谷/贪心/a.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +104,7 @@
       <workItem from="1741097389105" duration="218000" />
       <workItem from="1741262705160" duration="168000" />
       <workItem from="1741316521676" duration="92000" />
-      <workItem from="1741354913209" duration="1363000" />
+      <workItem from="1741354913209" duration="2096000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <option name="closed" value="true" />
