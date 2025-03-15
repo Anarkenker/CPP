@@ -1,19 +1,56 @@
-#include<bits/stdc++.h>
+#include<iostream>
+#include<string>
+#include<cctype>
 using namespace std;
-int main(){
-    string n;
-    int s,i;
-    cin>>n>>s;
-    while(s){
-        for(i=0;n[i]<=n[i+1];){//找高峰期
-            i++;
+const int N = 1e6;
+int stk[N];
+int tt = -1;
+
+// 修正入栈操作，避免数组越界
+void push(int a) {
+    stk[++tt] = a;
+}
+
+int main() {
+    string str;
+    // 使用 getline 读取整行输入，确保能读取完整表达式
+    cin >> str;
+    string str1 = "";
+
+    for (int i = 0; i < str.size(); i++) {
+        if (str[i] == '@') {
+            // 遇到结束符号，结束循环
+            break;
         }
-        n.erase(i,1);//删除函数,就是从第i个位置连续删1个。如果不清楚删除函数，可以百度。
-        s--;
+        if (isdigit(str[i])) {
+            str1 += str[i];
+        } else if (str[i] == '.') {
+            if (!str1.empty()) {
+                int num = stoi(str1);
+                str1 = "";
+                push(num);
+            }
+        } else if (str[i] == '-' || str[i] == '*' || str[i] == '+' || str[i] == '/') {
+            int n1 = stk[tt--];
+            int n2 = stk[tt];
+            int mid;
+            switch (str[i]) {
+                case '-':
+                    mid = n2 - n1;
+                    break;
+                case '*':
+                    mid = n2 * n1;
+                    break;
+                case '+':
+                    mid = n2 + n1;
+                    break;
+                case '/':
+                    mid = n2 / n1;
+                    break;
+            }
+            stk[tt] = mid;
+        }
     }
-    while(n[0]=='0'&&n.size()>1){//处理前导零，注意如果长度是1就不能再删了。
-    	n.erase(0,1);
-	}
-    cout<<n;
+    cout << stk[tt] << endl;
     return 0;
 }

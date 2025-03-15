@@ -15,7 +15,6 @@ void init(){//初始化
     idx = 0;
 }
 
-
 //将x插到头结点, 插入到头节点！！！！
 void add_to_head(int x){
     e[idx] = x;
@@ -23,6 +22,7 @@ void add_to_head(int x){
     head = idx;
     idx++;
 }
+
 //将x插到下标是k的后面
 void add(int k, int x){
     e[idx] = x;
@@ -34,3 +34,4 @@ void add(int k, int x){
 int main(){
 
 }
+//在算法题中不要考虑内存的事情

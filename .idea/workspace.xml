@@ -19,8 +19,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e82a5d37-5867-48fb-8ede-51b65e5c0ee1" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/test.exe" beforeDir="false" afterPath="$PROJECT_DIR$/test.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/洛谷/贪心/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/洛谷/贪心/a.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ACwing/算法课/第二讲数据结构/1链表与邻接表/单链表.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ACwing/算法课/第二讲数据结构/1链表与邻接表/单链表.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +54,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "C/C++ 文件.g++.executor": "Run",
     "C/C++ 文件.test.cpp.executor": "Run",
     "RunOnceActivity.RadMigrateCodeStyle": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -64,7 +64,7 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/qq327/Desktop/fswworkspace",
+    "last_opened_file_path": "C:/Users/qq327/Desktop/MinGW/bin/g++.exe",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -74,7 +74,9 @@
   }
 }]]></component>
   <component name="RunManager" selected="C/C++ 文件.g++">
-    <configuration name="g++" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" singleton="false" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="g++" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" singleton="false" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="c++" TARGET_NAME="g++" CONFIG_NAME="g++">
+      <option name="sourceFile" value="C:\Users\qq327\Desktop\MinGW\bin\g++.exe" />
+      <option name="toolchainName" value="MinGW" />
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
@@ -105,6 +107,7 @@
       <workItem from="1741262705160" duration="168000" />
       <workItem from="1741316521676" duration="92000" />
       <workItem from="1741354913209" duration="2096000" />
+      <workItem from="1741620032852" duration="82000" />
     </task>
     <task id="LOCAL-00001" summary="add">
       <option name="closed" value="true" />
