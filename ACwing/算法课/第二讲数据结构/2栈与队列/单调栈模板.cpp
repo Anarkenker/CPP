@@ -6,14 +6,18 @@ using namespace std;
 const int N = 1e6 + 10;
 int n;
 int stk[N], tt;
+void init(){
+    tt = 0; 
+}
 int main(){
     cin >> n;
     for(int i = 0; i < n; i++){
         int x;
-        cin >> x;
+        scanf("%d", &x);
         while(tt && stk[tt] >= x) tt--;
-        if(tt) cout << stk[tt] << " ";
-        else cout << -1 << " ";
+        if(tt) printf("%d ", stk[tt]);
+        else printf("-1 ");
+        stk[++tt] = x;
     }
     return 0;
 }

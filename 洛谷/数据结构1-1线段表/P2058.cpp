@@ -15,9 +15,7 @@ int ans = 0;
 int main() {
     int n;
     cin >> n;
-
     queue<Node> q;
-
     for (int i = 1; i <= n; i++) {
         int t, k;
         cin >> t >> k;
