@@ -1,0 +1,4 @@
+C:/Users/qq327/Desktop/SOCKET/build/CMakeFiles/Server.dir
+C:/Users/qq327/Desktop/SOCKET/build/CMakeFiles/Client.dir
+C:/Users/qq327/Desktop/SOCKET/build/CMakeFiles/edit_cache.dir
+C:/Users/qq327/Desktop/SOCKET/build/CMakeFiles/rebuild_cache.dir

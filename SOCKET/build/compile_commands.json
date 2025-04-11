@@ -1,0 +1,26 @@
+[
+{
+  "directory": "C:/Users/qq327/Desktop/SOCKET/build",
+  "command": "C:\\Users\\qq327\\Desktop\\MinGW\\bin\\g++.exe   -g -o CMakeFiles\\Server.dir\\Server\\server.cpp.obj -c C:\\Users\\qq327\\Desktop\\SOCKET\\Server\\server.cpp",
+  "file": "C:/Users/qq327/Desktop/SOCKET/Server/server.cpp",
+  "output": "CMakeFiles/Server.dir/Server/server.cpp.obj"
+},
+{
+  "directory": "C:/Users/qq327/Desktop/SOCKET/build",
+  "command": "C:\\Users\\qq327\\Desktop\\MinGW\\bin\\g++.exe   -g -o CMakeFiles\\Server.dir\\tcpSocket\\tcpSocket.cpp.obj -c C:\\Users\\qq327\\Desktop\\SOCKET\\tcpSocket\\tcpSocket.cpp",
+  "file": "C:/Users/qq327/Desktop/SOCKET/tcpSocket/tcpSocket.cpp",
+  "output": "CMakeFiles/Server.dir/tcpSocket/tcpSocket.cpp.obj"
+},
+{
+  "directory": "C:/Users/qq327/Desktop/SOCKET/build",
+  "command": "C:\\Users\\qq327\\Desktop\\MinGW\\bin\\g++.exe   -g -o CMakeFiles\\Client.dir\\Client\\Client.cpp.obj -c C:\\Users\\qq327\\Desktop\\SOCKET\\Client\\Client.cpp",
+  "file": "C:/Users/qq327/Desktop/SOCKET/Client/Client.cpp",
+  "output": "CMakeFiles/Client.dir/Client/Client.cpp.obj"
+},
+{
+  "directory": "C:/Users/qq327/Desktop/SOCKET/build",
+  "command": "C:\\Users\\qq327\\Desktop\\MinGW\\bin\\g++.exe   -g -o CMakeFiles\\Client.dir\\tcpSocket\\tcpSocket.cpp.obj -c C:\\Users\\qq327\\Desktop\\SOCKET\\tcpSocket\\tcpSocket.cpp",
+  "file": "C:/Users/qq327/Desktop/SOCKET/tcpSocket/tcpSocket.cpp",
+  "output": "CMakeFiles/Client.dir/tcpSocket/tcpSocket.cpp.obj"
+}
+]
